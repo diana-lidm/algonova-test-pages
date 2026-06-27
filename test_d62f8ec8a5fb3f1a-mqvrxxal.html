@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chelsea Castaño Vega — Algonova</title>
+  <meta property="og:title" content="Chelsea Castaño Vega — Algonova">
+  <meta property="og:image" content="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_chelsea_casta_o_vega_1782529334556-Dl6joRzKUIj1PRcSfsDvPwXVcwBr46.png">
+  <meta property="og:description" content="Python Pro — Algonova">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F7F4FF; color: #180620; min-height: 100vh; }
+    .page { max-width: 720px; margin: 0 auto; padding: 0 0 48px; }
+
+    #certificado { text-align: center; margin-bottom: 20px; }
+    #certificado img { width: 100%; display: block; box-shadow: 0 4px 24px rgba(95,58,190,.15); }
+
+    #precio { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #precio h2 { font-size: 1.1rem; color: #5F3ABE; margin-bottom: 8px; }
+    .duration { font-size: .95rem; color: #6b5f80; margin-bottom: 16px; }
+    .cta-btn { display: block; background: #5F3ABE; color: #fff; text-decoration: none; text-align: center; padding: 14px 24px; border-radius: 10px; font-size: 1rem; font-weight: 600; }
+    .cta-fallback { background: #F7F4FF; border-radius: 10px; padding: 14px 16px; font-size: .95rem; color: #5F3ABE; border: 1px solid #D4C8FF; }
+
+    #que-espera { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #que-espera h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 16px; line-height: 1.4; }
+    #que-espera h2 span { color: #180620; font-weight: 700; }
+    #que-espera ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    #que-espera li { display: flex; align-items: flex-start; gap: 10px; font-size: 1rem; line-height: 1.5; }
+    #que-espera li::before { content: "✓"; flex-shrink: 0; width: 22px; height: 22px; background: #5F3ABE; color: #fff; border-radius: 50%; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+
+    #proyectos { margin: 0 12px 16px; }
+    #proyectos h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .proj-item { background: #fff; border-radius: 12px; overflow: hidden; }
+    .proj-item img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: contain; background: #111; }
+    .proj-item p { font-size: .75rem; color: #5F3ABE; text-align: center; padding: 6px 8px; }
+
+    #plan { margin: 0 12px 16px; }
+    #plan h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .mod { background: #EDE8FF; border-radius: 12px; margin-bottom: 8px; overflow: hidden; }
+    .mod-header { display: flex; align-items: center; gap: 8px; padding: 14px 16px; cursor: pointer; list-style: none; user-select: none; }
+    .mod-header::-webkit-details-marker { display: none; }
+    .mod-title { flex: 1; font-size: .95rem; font-weight: 600; color: #180620; }
+    .mod-count { font-size: .8rem; color: #5F3ABE; }
+    .mod-arrow { font-size: 1.1rem; color: #A38AFF; transition: transform .2s; }
+    details[open] .mod-arrow { transform: rotate(90deg); }
+    .mod-lessons { list-style: none; padding: 0 16px 12px; display: flex; flex-direction: column; gap: 6px; }
+    .mod-lessons li { font-size: .9rem; color: #180620; line-height: 1.4; }
+    .lec-num { color: #A38AFF; font-weight: 600; }
+    .mod-resultado { font-size: .85rem; color: #5c4d80; line-height: 1.5; padding: 10px 16px 14px; border-top: 1px solid #D4C8FF; margin-top: 4px; }
+    .mod-resultado strong { color: #180620; }
+
+    #por-que { background: #EDE8FF; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #por-que h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 14px; }
+    #por-que ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    #por-que li { font-size: .9rem; line-height: 1.5; padding-left: 14px; border-left: 3px solid #A38AFF; border-radius: 0; }
+
+    footer { text-align: center; margin-top: 32px; font-size: .8rem; color: #A38AFF; }
+
+    @media (min-width: 640px) {
+      .page { padding: 24px 16px 48px; }
+      #certificado img { border-radius: 16px; width: 100%; }
+      #certificado { margin-bottom: 24px; padding: 0 16px; }
+      #precio, #que-espera, #plan, #por-que { margin: 0 0 24px; padding: 24px; }
+      #proyectos { margin: 0 0 24px; }
+      #plan { padding: 0; }
+      #precio h2, #que-espera h2 { font-size: 1.25rem; }
+      #por-que h2 { font-size: 1.1rem; }
+      #por-que li { font-size: .95rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <section id="certificado">
+    <img src="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_chelsea_casta_o_vega_1782529334556-Dl6joRzKUIj1PRcSfsDvPwXVcwBr46.png" alt="Certificado de Chelsea Castaño Vega">
+  </section>
+
+  <section id="precio">
+    <h2>Cuánto cuesta</h2>
+    <p class="duration">1 hora</p>
+    <div class="cta-fallback">Para completar el pago, escríbele a tu asesor — él te enviará el enlace de pago.</div>
+  </section>
+
+  <section id="que-espera">
+    <h2>Qué le espera a <span>Chelsea Castaño Vega</span> en Python Pro</h2>
+    <ul>
+      <li>Estudio intensivo de Python avanzado y bibliotecas profesionales</li>
+        <li>Proyectos de IA, apps móviles, análisis de datos y desarrollo web</li>
+        <li>Publica su portafolio en GitHub para destacar en el mercado laboral</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Lo que crean los estudiantes</h2>
+    <div class="proj-grid">
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3661-3936-4637-b536-343937383436/python-01.gif" alt="Juego en Python" loading="lazy">
+        <p>Juego en Python</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild6636-6531-4663-b732-643665633163/python-02.gif" alt="Generador de colores" loading="lazy">
+        <p>Generador de colores</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild6330-3662-4438-b761-343034633464/python-03.gif" alt="Árbol fractal" loading="lazy">
+        <p>Árbol fractal</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>Plan temático</h2>
+    
+    <details class="mod" open>
+      <summary class="mod-header">
+        <span class="mod-title">1.er año · Módulo 1. Tipos de datos</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción a Python</li>
+        <li><span class="lec-num">Lección 2:</span> Variables</li>
+        <li><span class="lec-num">Lección 3:</span> Cadenas de texto</li>
+        <li><span class="lec-num">Lección 4:</span> Taller de resolución de problemas</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes logran conocer los fundamentos de la programación usando el lenguaje Python y familiarizarse con la lógica básica de programación en el área de IT.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">1.er año · Módulo 2. Algoritmos</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Operador condicional</li>
+        <li><span class="lec-num">Lección 2:</span> Operador condicional anidado</li>
+        <li><span class="lec-num">Lección 3:</span> Ciclos (Parte 1)</li>
+        <li><span class="lec-num">Lección 4:</span> Ciclos (Parte 2)</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes son capaces de utilizar la lógica de ramificación y los bucles para resolver diversos problemas de programación y construir algoritmos eficientes.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">1.er año · Módulo 3. Métodos de organización del código</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Funciones (Parte 1)</li>
+        <li><span class="lec-num">Lección 2:</span> Funciones (Parte 2)</li>
+        <li><span class="lec-num">Lección 3:</span> Módulos</li>
+        <li><span class="lec-num">Lección 4:</span> Hackatón en equipo</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes pueden escribir código limpio, estructurado y reutilizable mediante funciones y módulos, así como trabajar en pequeños equipos.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">1.er año · Módulo 4. Estructuras de datos</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Listas y tuplas</li>
+        <li><span class="lec-num">Lección 2:</span> Diccionarios y conjuntos</li>
+        <li><span class="lec-num">Lección 3:</span> Estructuras de datos anidadas</li>
+        <li><span class="lec-num">Lección 4:</span> Taller de resolución de problemas</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes entienden y pueden elegir las estructuras de datos adecuadas para almacenar y procesar información de manera efectiva en programas de Python.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">1.er año · Módulo 5. Programación orientada a objetos</span>
+        <span class="mod-count">3 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Clases</li>
+        <li><span class="lec-num">Lección 2:</span> Herencia</li>
+        <li><span class="lec-num">Lección 3:</span> Proyecto: juego «Fast Clicker» (Parte 1-2)</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes pueden aplicar conceptos de POO, como clases, objetos y herencia, para desarrollar aplicaciones y juegos simples.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">1.er año · Módulo 6. Juegos 2D</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Desarrollo de juegos en un entorno profesional</li>
+        <li><span class="lec-num">Lección 2:</span> Proyecto: juego «The Maze» (Parte 1-3)</li>
+        <li><span class="lec-num">Lección 3:</span> Presentación del proyecto</li>
+        <li><span class="lec-num">Lección 4:</span> Creación de un archivo ejecutable</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes pueden diseñar y desarrollar juegos 2D sencillos usando Python con un enfoque orientado a objetos.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">1.er año · Módulo 7. Aplicaciones de escritorio</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción a PyQt5</li>
+        <li><span class="lec-num">Lección 2:</span> Desarrollo en equipo</li>
+        <li><span class="lec-num">Lección 3:</span> Proyecto: &quot;Aplicación de escritorio&quot; (Parte 1-2)</li>
+        <li><span class="lec-num">Lección 4:</span> Pruebas y preparación para la defensa del proyecto</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes pueden diseñar y desarrollar aplicaciones de escritorio simples usando PyQt5, trabajar de manera colaborativa y aplicar procesos de prueba.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">2.º año · Módulo 1. Repaso</span>
+        <span class="mod-count">2 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Repaso. Algoritmos y estructuras de datos</li>
+        <li><span class="lec-num">Lección 2:</span> Repaso. Funciones y POO</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> </p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">2.º año · Módulo 2. Desarrollo móvil</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción al desarrollo móvil</li>
+        <li><span class="lec-num">Lección 2:</span> Desarrollo de aplicaciones móviles MVP</li>
+        <li><span class="lec-num">Lección 3:</span> Del prototipo al MVP</li>
+        <li><span class="lec-num">Lección 4:</span> Visualización y pruebas</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> </p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">2.º año · Módulo 3. Análisis de datos</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Fundamentos del trabajo con Pandas. Filtrado de datos</li>
+        <li><span class="lec-num">Lección 2:</span> Métodos de agrupación de datos</li>
+        <li><span class="lec-num">Lección 3:</span> Limpieza de datos. Feature engineering</li>
+        <li><span class="lec-num">Lección 4:</span> Resolución de casos analíticos</li>
+        <li><span class="lec-num">Lección 5:</span> Visualización de datos</li>
+        <li><span class="lec-num">Lección 6:</span> Pitching: presentación ante inversores</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> </p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">2.º año · Módulo 4. Fundamentos del aprendizaje automático</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Algoritmos de aprendizaje automático</li>
+        <li><span class="lec-num">Lección 2:</span> Estrategia y tácticas para el entrenamiento de modelos</li>
+        <li><span class="lec-num">Lección 3:</span> Trabajo en proyectos individuales</li>
+        <li><span class="lec-num">Lección 4:</span> Presentación de proyectos</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> </p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">2.º año · Módulo 5. Juegos 3D</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción a Panda 3D</li>
+        <li><span class="lec-num">Lección 2:</span> Carga de mapas</li>
+        <li><span class="lec-num">Lección 3:</span> Control del jugador</li>
+        <li><span class="lec-num">Lección 4:</span> Modo de juego principal</li>
+        <li><span class="lec-num">Lección 5:</span> Trabajo con el mapa</li>
+        <li><span class="lec-num">Lección 6:</span> Presentación de proyectos</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> </p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">2.º año · Módulo 6. Desarrollo web</span>
+        <span class="mod-count">8 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción al desarrollo web</li>
+        <li><span class="lec-num">Lección 2:</span> Maquetación de páginas web</li>
+        <li><span class="lec-num">Lección 3:</span> Trabajo con bases de datos</li>
+        <li><span class="lec-num">Lección 4:</span> Estructura de una base de datos</li>
+        <li><span class="lec-num">Lección 5:</span> Sitio web dinámico. Sesiones</li>
+        <li><span class="lec-num">Lección 6:</span> Obtención y procesamiento de datos</li>
+        <li><span class="lec-num">Lección 7:</span> Plantillas</li>
+        <li><span class="lec-num">Lección 8:</span> Cierre del módulo</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> </p>
+    </details>
+  </section>
+
+  <section id="por-que">
+    <h2>¿Por qué aprender Python Pro en Algonova?</h2>
+    <ul>
+      <li>Herramientas para profesionales de verdad: Visual Studio Code y GitHub, las plataformas que utilizan los programadores en todo el mundo.</li>
+        <li>Crea un portafolio sólido para tu futuro: desde videojuegos hasta aplicaciones móviles y programas de análisis de datos.</li>
+        <li>Aprende con el lenguaje más prometedor del sector IT a través de la creación de juegos y aplicaciones.</li>
+        <li>Simulación de trabajo en una empresa de tecnología real: resolución de tareas actuales, diseño y pruebas de software.</li>
+    </ul>
+  </section>
+
+  <footer>© Algonova · algonova.lat</footer>
+</div>
+</body>
+</html>
