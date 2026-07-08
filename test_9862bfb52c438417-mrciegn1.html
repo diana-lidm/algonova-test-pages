@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leonardo — Algonova</title>
+  <meta property="og:title" content="Leonardo — Algonova">
+  <meta property="og:image" content="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_leonardo_1783541234812-ANvIqpuCGN6yG043tX7Mt31bsvdrm5.png">
+  <meta property="og:description" content="Programación Visual (Scratch) — Algonova">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F7F4FF; color: #180620; min-height: 100vh; }
+    .page { max-width: 720px; margin: 0 auto; padding: 0 0 48px; }
+
+    #certificado { text-align: center; margin-bottom: 20px; }
+    #certificado img { width: 100%; display: block; box-shadow: 0 4px 24px rgba(95,58,190,.15); }
+
+    #precio { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #precio h2 { font-size: 1.1rem; color: #5F3ABE; margin-bottom: 8px; }
+    .duration { font-size: .95rem; color: #6b5f80; margin-bottom: 16px; }
+    .cta-btn { display: block; background: #5F3ABE; color: #fff; text-decoration: none; text-align: center; padding: 14px 24px; border-radius: 10px; font-size: 1rem; font-weight: 600; }
+    .cta-fallback { background: #F7F4FF; border-radius: 10px; padding: 14px 16px; font-size: .95rem; color: #5F3ABE; border: 1px solid #D4C8FF; }
+
+    #que-espera { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #que-espera h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 16px; line-height: 1.4; }
+    #que-espera h2 span { color: #180620; font-weight: 700; }
+    #que-espera ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    #que-espera li { display: flex; align-items: flex-start; gap: 10px; font-size: 1rem; line-height: 1.5; }
+    #que-espera li::before { content: "✓"; flex-shrink: 0; width: 22px; height: 22px; background: #5F3ABE; color: #fff; border-radius: 50%; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+
+    #proyectos { margin: 0 12px 16px; }
+    #proyectos h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .proj-item { background: #fff; border-radius: 12px; overflow: hidden; }
+    .proj-item img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: contain; background: #111; }
+    .proj-item p { font-size: .75rem; color: #5F3ABE; text-align: center; padding: 6px 8px; }
+
+    #plan { margin: 0 12px 16px; }
+    #plan h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .mod { background: #EDE8FF; border-radius: 12px; margin-bottom: 8px; overflow: hidden; }
+    .mod-header { display: flex; align-items: center; gap: 8px; padding: 14px 16px; cursor: pointer; list-style: none; user-select: none; }
+    .mod-header::-webkit-details-marker { display: none; }
+    .mod-title { flex: 1; font-size: .95rem; font-weight: 600; color: #180620; }
+    .mod-count { font-size: .8rem; color: #5F3ABE; }
+    .mod-arrow { font-size: 1.1rem; color: #A38AFF; transition: transform .2s; }
+    details[open] .mod-arrow { transform: rotate(90deg); }
+    .mod-lessons { list-style: none; padding: 0 16px 12px; display: flex; flex-direction: column; gap: 6px; }
+    .mod-lessons li { font-size: .9rem; color: #180620; line-height: 1.4; }
+    .lec-num { color: #A38AFF; font-weight: 600; }
+    .mod-resultado { font-size: .85rem; color: #5c4d80; line-height: 1.5; padding: 10px 16px 14px; border-top: 1px solid #D4C8FF; margin-top: 4px; }
+    .mod-resultado strong { color: #180620; }
+
+    #por-que { background: #EDE8FF; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #por-que h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 14px; }
+    #por-que ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    #por-que li { font-size: .9rem; line-height: 1.5; padding-left: 14px; border-left: 3px solid #A38AFF; border-radius: 0; }
+
+    footer { text-align: center; margin-top: 32px; font-size: .8rem; color: #A38AFF; }
+
+    @media (min-width: 640px) {
+      .page { padding: 24px 16px 48px; }
+      #certificado img { border-radius: 16px; width: 100%; }
+      #certificado { margin-bottom: 24px; padding: 0 16px; }
+      #precio, #que-espera, #plan, #por-que { margin: 0 0 24px; padding: 24px; }
+      #proyectos { margin: 0 0 24px; }
+      #plan { padding: 0; }
+      #precio h2, #que-espera h2 { font-size: 1.25rem; }
+      #por-que h2 { font-size: 1.1rem; }
+      #por-que li { font-size: .95rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <section id="certificado">
+    <img src="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_leonardo_1783541234812-ANvIqpuCGN6yG043tX7Mt31bsvdrm5.png" alt="Certificado de Leonardo">
+  </section>
+
+  <section id="precio">
+    <h2>Cuánto cuesta</h2>
+    <p class="duration">1 hora</p>
+    <a class="cta-btn" href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=2596944712-92f658d5-e6b8-4844-b453-0d1535f63a67" target="_blank">Pagar ahora →</a>
+  </section>
+
+  <section id="que-espera">
+    <h2>Qué le espera a <span>Leonardo</span> en Programación Visual (Scratch)</h2>
+    <ul>
+      <li>Crea juegos y animaciones interactivas propias</li>
+        <li>Aprende variables, bucles y lógica de programación paso a paso</li>
+        <li>Se gradúa con un proyecto final propio: un juego o animación</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Lo que crean los estudiantes</h2>
+    <div class="proj-grid">
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3736-6165-4066-b765-656166353936/Scratch_01.gif" alt="Juego de aventuras" loading="lazy">
+        <p>Juego de aventuras</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3239-3039-4335-a366-386334373731/Scratch_02.gif" alt="Juego Flappy Bird" loading="lazy">
+        <p>Juego Flappy Bird</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3066-3066-4361-b738-666663386238/Scratch_Animation_1.gif" alt="Juego con personajes" loading="lazy">
+        <p>Juego con personajes</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>Plan temático</h2>
+    
+    <details class="mod" open>
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 1. Introducción</span>
+        <span class="mod-count">5 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción a los algoritmos lineales</li>
+        <li><span class="lec-num">Lección 2:</span> Bucles (Repeticiones)</li>
+        <li><span class="lec-num">Lección 3:</span> Posición inicial (Propiedades del sprite)</li>
+        <li><span class="lec-num">Lección 4:</span> Eventos</li>
+        <li><span class="lec-num">Lección 5:</span> Proyecto: Primer proyecto en Scratch</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes son capaces de organizar instrucciones sencillas de forma secuencial y comprender cómo se ejecuta un programa paso a paso en Scratch.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 2. Espacio</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Coordenadas X e Y</li>
+        <li><span class="lec-num">Lección 2:</span> Dirección</li>
+        <li><span class="lec-num">Lección 3:</span> Giros y grados</li>
+        <li><span class="lec-num">Lección 4:</span> Mensajes</li>
+        <li><span class="lec-num">Lección 5:</span> Proyecto: Animación</li>
+        <li><span class="lec-num">Lección 6:</span> Proyecto: Animación. Parte 2</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes son capaces de ajustar la posición, dirección y movimiento del sprite, así como crear animaciones sencillas con un flujo claro.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 3. Juego</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Condiciones y operadores</li>
+        <li><span class="lec-num">Lección 2:</span> Cambiar coordenadas</li>
+        <li><span class="lec-num">Lección 3:</span> Procedimientos</li>
+        <li><span class="lec-num">Lección 4:</span> Planificación del juego</li>
+        <li><span class="lec-num">Lección 5:</span> Pruebas del juego</li>
+        <li><span class="lec-num">Lección 6:</span> Presentación del juego</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes son capaces de diseñar, crear, probar y presentar un juego sencillo con una lógica que funcione correctamente.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 4. Lógica</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Operadores lógicos: AND, OR, NOT</li>
+        <li><span class="lec-num">Lección 2:</span> Bucles condicionales</li>
+        <li><span class="lec-num">Lección 3:</span> Generador de números aleatorios (RNG)</li>
+        <li><span class="lec-num">Lección 4:</span> Coordenadas de área</li>
+        <li><span class="lec-num">Lección 5:</span> Proyecto grupal</li>
+        <li><span class="lec-num">Lección 6:</span> Proyecto grupal: Modificación y presentación</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes son capaces de crear juegos más dinámicos y no monótonos, además de aprender a trabajar en equipo para producir un proyecto conjunto.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 5. Variables</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Variables en bucles</li>
+        <li><span class="lec-num">Lección 2:</span> Tipos de datos y operadores</li>
+        <li><span class="lec-num">Lección 3:</span> Variables en juegos</li>
+        <li><span class="lec-num">Lección 4:</span> Variables como parámetros</li>
+        <li><span class="lec-num">Lección 5:</span> Proyecto: Chatbot</li>
+        <li><span class="lec-num">Lección 6:</span> Finalización y presentación del proyecto</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes comprenden cómo almacenar y procesar datos en un programa, y son capaces de crear chatbots o juegos interactivos utilizando variables.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 6. Clones</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Clases y objetos</li>
+        <li><span class="lec-num">Lección 2:</span> Variables locales y globales</li>
+        <li><span class="lec-num">Lección 3:</span> Proyecto &quot;Zombie Shooter&quot;. Parte 1</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto &quot;Zombie Shooter&quot;. Parte 2</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes son capaces de crear juegos complejos con múltiples objetos, proyectiles, enemigos y sistemas de puntuación/vida utilizando clones y variables avanzadas.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 7. Graduación</span>
+        <span class="mod-count">3 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Preparación para el proyecto final</li>
+        <li><span class="lec-num">Lección 2:</span> Finalización de la tarea final</li>
+        <li><span class="lec-num">Lección 3:</span> Graduación: Programación Visual</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes se gradúan con un proyecto independiente que consiste en un juego o animación interactiva creada por ellos mismos.</p>
+    </details>
+  </section>
+
+  <section id="por-que">
+    <h2>¿Por qué aprender Programación Visual (Scratch) en Algonova?</h2>
+    <ul>
+      <li>Seguridad en Internet: enseñamos a buscar información correctamente y a sortear con habilidad cualquier peligro en Internet.</li>
+        <li>Aprender jugando: dominamos la computadora y programas complejos en el formato de una emocionante aventura.</li>
+        <li>Ayuda en los estudios: enseñamos a manejar fácilmente la carga de trabajo y a estar un paso por delante de los compañeros.</li>
+        <li>Un boleto al futuro: una base sólida para aprender programación y diseño digital.</li>
+    </ul>
+  </section>
+
+  <footer>© Algonova · algonova.lat</footer>
+</div>
+</body>
+</html>
