@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Natalia — Algonova</title>
+  <meta property="og:title" content="Natalia — Algonova">
+  <meta property="og:image" content="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_natalia_1783479197849-UC6udzqU7YIUfeMykcd6llKvCyz0sS.png">
+  <meta property="og:description" content="Diseño Digital — Algonova">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F7F4FF; color: #180620; min-height: 100vh; }
+    .page { max-width: 720px; margin: 0 auto; padding: 0 0 48px; }
+
+    #certificado { text-align: center; margin-bottom: 20px; }
+    #certificado img { width: 100%; display: block; box-shadow: 0 4px 24px rgba(95,58,190,.15); }
+
+    #precio { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #precio h2 { font-size: 1.1rem; color: #5F3ABE; margin-bottom: 8px; }
+    .duration { font-size: .95rem; color: #6b5f80; margin-bottom: 16px; }
+    .cta-btn { display: block; background: #5F3ABE; color: #fff; text-decoration: none; text-align: center; padding: 14px 24px; border-radius: 10px; font-size: 1rem; font-weight: 600; }
+    .cta-fallback { background: #F7F4FF; border-radius: 10px; padding: 14px 16px; font-size: .95rem; color: #5F3ABE; border: 1px solid #D4C8FF; }
+
+    #que-espera { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #que-espera h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 16px; line-height: 1.4; }
+    #que-espera h2 span { color: #180620; font-weight: 700; }
+    #que-espera ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    #que-espera li { display: flex; align-items: flex-start; gap: 10px; font-size: 1rem; line-height: 1.5; }
+    #que-espera li::before { content: "✓"; flex-shrink: 0; width: 22px; height: 22px; background: #5F3ABE; color: #fff; border-radius: 50%; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+
+    #proyectos { margin: 0 12px 16px; }
+    #proyectos h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .proj-item { background: #fff; border-radius: 12px; overflow: hidden; }
+    .proj-item img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: contain; background: #111; }
+    .proj-item p { font-size: .75rem; color: #5F3ABE; text-align: center; padding: 6px 8px; }
+
+    #plan { margin: 0 12px 16px; }
+    #plan h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .mod { background: #EDE8FF; border-radius: 12px; margin-bottom: 8px; overflow: hidden; }
+    .mod-header { display: flex; align-items: center; gap: 8px; padding: 14px 16px; cursor: pointer; list-style: none; user-select: none; }
+    .mod-header::-webkit-details-marker { display: none; }
+    .mod-title { flex: 1; font-size: .95rem; font-weight: 600; color: #180620; }
+    .mod-count { font-size: .8rem; color: #5F3ABE; }
+    .mod-arrow { font-size: 1.1rem; color: #A38AFF; transition: transform .2s; }
+    details[open] .mod-arrow { transform: rotate(90deg); }
+    .mod-lessons { list-style: none; padding: 0 16px 12px; display: flex; flex-direction: column; gap: 6px; }
+    .mod-lessons li { font-size: .9rem; color: #180620; line-height: 1.4; }
+    .lec-num { color: #A38AFF; font-weight: 600; }
+    .mod-resultado { font-size: .85rem; color: #5c4d80; line-height: 1.5; padding: 10px 16px 14px; border-top: 1px solid #D4C8FF; margin-top: 4px; }
+    .mod-resultado strong { color: #180620; }
+
+    #por-que { background: #EDE8FF; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #por-que h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 14px; }
+    #por-que ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    #por-que li { font-size: .9rem; line-height: 1.5; padding-left: 14px; border-left: 3px solid #A38AFF; border-radius: 0; }
+
+    footer { text-align: center; margin-top: 32px; font-size: .8rem; color: #A38AFF; }
+
+    @media (min-width: 640px) {
+      .page { padding: 24px 16px 48px; }
+      #certificado img { border-radius: 16px; width: 100%; }
+      #certificado { margin-bottom: 24px; padding: 0 16px; }
+      #precio, #que-espera, #plan, #por-que { margin: 0 0 24px; padding: 24px; }
+      #proyectos { margin: 0 0 24px; }
+      #plan { padding: 0; }
+      #precio h2, #que-espera h2 { font-size: 1.25rem; }
+      #por-que h2 { font-size: 1.1rem; }
+      #por-que li { font-size: .95rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <section id="certificado">
+    <img src="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_natalia_1783479197849-UC6udzqU7YIUfeMykcd6llKvCyz0sS.png" alt="Certificado de Natalia">
+  </section>
+
+  <section id="precio">
+    <h2>Cuánto cuesta</h2>
+    <p class="duration">1 hora</p>
+    <a class="cta-btn" href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=2596944712-cec119b4-35a2-49a3-8465-dd589ea5d344" target="_blank">Pagar ahora →</a>
+  </section>
+
+  <section id="que-espera">
+    <h2>Qué le espera a <span>Natalia</span> en Diseño Digital</h2>
+    <ul>
+      <li>Domina ilustración, retoque, modelado 3D e infografía</li>
+        <li>Crea personajes, un logotipo y un mini-branding propio</li>
+        <li>Termina con un portafolio digital profesional completo</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Lo que crean los estudiantes</h2>
+    <div class="proj-grid">
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild6330-3463-4036-a263-366330383064/Motion_-_Gita_1.gif" alt="Motion design" loading="lazy">
+        <p>Motion design</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3337-3139-4561-b366-613263656438/M10L2_-_Mekayla_-_As.gif" alt="Animación avanzada" loading="lazy">
+        <p>Animación avanzada</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3263-3966-4530-b034-363663393365/GD_Sr_-_M10L2_-_Jamu.gif" alt="Proyecto final" loading="lazy">
+        <p>Proyecto final</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>Plan temático</h2>
+    
+    <details class="mod" open>
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 1. Gráfica raster</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción al diseño gráfico</li>
+        <li><span class="lec-num">Lección 2:</span> Luz y sombra</li>
+        <li><span class="lec-num">Lección 3:</span> Composición y perspectiva</li>
+        <li><span class="lec-num">Lección 4:</span> Práctica: espacio creativo</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) creará una ilustración digital con iluminación y profundidad bien definidas.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 2. Collage y póster</span>
+        <span class="mod-count">3 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Qué es un collage</li>
+        <li><span class="lec-num">Lección 2:</span> Estilos comerciales y patrones</li>
+        <li><span class="lec-num">Lección 3:</span> Práctica: póster-collage</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) diseñará un póster propio con un mensaje visual claro.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 3. Retoque y composiciones de fantasía</span>
+        <span class="mod-count">2 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Fundamentos del retoque</li>
+        <li><span class="lec-num">Lección 2:</span> Práctica: mundo de fantasía</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Creará una composición de fantasía combinando fotografía, efectos y gráfica digital.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 4. Modelado 3D</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Fundamentos del 3D</li>
+        <li><span class="lec-num">Lección 2:</span> Formas volumétricas básicas</li>
+        <li><span class="lec-num">Lección 3:</span> Objetos 3D avanzados</li>
+        <li><span class="lec-num">Lección 4:</span> Práctica: creación de una escena tipo videojuego</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) construirá su propia escena o modelo 3D (una casa, una habitación o un objeto).</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 5. Diseño editorial (booklet)</span>
+        <span class="mod-count">2 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Reglas básicas de maquetación</li>
+        <li><span class="lec-num">Lección 2:</span> Práctica: mini-booklet</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Creará un booklet digital con una composición equilibrada entre texto y elementos gráficos.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 6. Ilustración vectorial</span>
+        <span class="mod-count">3 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción al vector</li>
+        <li><span class="lec-num">Lección 2:</span> Creación de elementos</li>
+        <li><span class="lec-num">Lección 3:</span> Práctica: calendario o ilustración temática</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) desarrollará su propia ilustración vectorial.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 7. Infografía</span>
+        <span class="mod-count">2 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Fundamentos de la infografía</li>
+        <li><span class="lec-num">Lección 2:</span> Práctica: &quot;cápsula del tiempo&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Diseñará una infografía clara y visualmente atractiva para comunicar información de manera ordenada.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 8. Identidad visual y mini-branding</span>
+        <span class="mod-count">2 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Logotipo y estilo visual</li>
+        <li><span class="lec-num">Lección 2:</span> Práctica: lanzamiento de un mini-brand</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) creará un logotipo, paleta de color, elementos visuales y dará forma a un mini-branding propio.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 9. Personajes y proporciones</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Introducción a la creación de personajes</li>
+        <li><span class="lec-num">Lección 2:</span> Proporciones del cuerpo</li>
+        <li><span class="lec-num">Lección 3:</span> Humanización: personaje tipo &quot;humanito&quot;</li>
+        <li><span class="lec-num">Lección 4:</span> Práctica: desarrollo del personaje</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Creará un personaje con emociones, proporciones y rasgos anatómicos básicos.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 10. Animación</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Fundamentos de la animación</li>
+        <li><span class="lec-num">Lección 2:</span> Creación de assets</li>
+        <li><span class="lec-num">Lección 3:</span> Scripts básicos de movimiento</li>
+        <li><span class="lec-num">Lección 4:</span> Práctica: video publicitario</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) producirá una animación corta en formato de mini-anuncio.</p>
+    </details>
+  </section>
+
+  <section id="por-que">
+    <h2>¿Por qué aprender Diseño Digital en Algonova?</h2>
+    <ul>
+      <li>Estudiaremos los fundamentos del diseño: comprenderemos cómo funcionan el color, la forma y la composición.</li>
+        <li>Creación de un portafolio: desde gráficos rasterizados hasta animaciones y diseño 3D.</li>
+        <li>Enseñaremos a expresar pensamientos, ideas y emociones mediante la creación de imágenes y animaciones.</li>
+        <li>Estudiaremos las herramientas profesionales que utilizan los diseñadores de todo el mundo.</li>
+    </ul>
+  </section>
+
+  <footer>© Algonova · algonova.lat</footer>
+</div>
+</body>
+</html>
