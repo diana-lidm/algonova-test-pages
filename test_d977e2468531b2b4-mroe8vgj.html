@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Siddhartha Johanan Tello España — Algonova</title>
+  <meta property="og:title" content="Siddhartha Johanan Tello España — Algonova">
+  <meta property="og:image" content="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_siddhartha_johanan_tello_espa_a_1784259849667-dblyYKWDNrzhP1RKZrUQVNxfUGhqh7.png">
+  <meta property="og:description" content="Creación de Juegos en Roblox — Algonova">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F7F4FF; color: #180620; min-height: 100vh; }
+    .page { max-width: 720px; margin: 0 auto; padding: 0 0 48px; }
+
+    #certificado { text-align: center; margin-bottom: 20px; }
+    #certificado img { width: 100%; display: block; box-shadow: 0 4px 24px rgba(95,58,190,.15); }
+
+    #precio { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #precio h2 { font-size: 1.1rem; color: #5F3ABE; margin-bottom: 8px; }
+    .duration { font-size: .95rem; color: #6b5f80; margin-bottom: 16px; }
+    .cta-btn { display: block; background: #5F3ABE; color: #fff; text-decoration: none; text-align: center; padding: 14px 24px; border-radius: 10px; font-size: 1rem; font-weight: 600; }
+    .cta-fallback { background: #F7F4FF; border-radius: 10px; padding: 14px 16px; font-size: .95rem; color: #5F3ABE; border: 1px solid #D4C8FF; }
+
+    #que-espera { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #que-espera h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 16px; line-height: 1.4; }
+    #que-espera h2 span { color: #180620; font-weight: 700; }
+    #que-espera ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    #que-espera li { display: flex; align-items: flex-start; gap: 10px; font-size: 1rem; line-height: 1.5; }
+    #que-espera li::before { content: "✓"; flex-shrink: 0; width: 22px; height: 22px; background: #5F3ABE; color: #fff; border-radius: 50%; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+
+    #proyectos { margin: 0 12px 16px; }
+    #proyectos h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .proj-item { background: #fff; border-radius: 12px; overflow: hidden; }
+    .proj-item img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: contain; background: #111; }
+    .proj-item p { font-size: .75rem; color: #5F3ABE; text-align: center; padding: 6px 8px; }
+
+    #plan { margin: 0 12px 16px; }
+    #plan h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .mod { background: #EDE8FF; border-radius: 12px; margin-bottom: 8px; overflow: hidden; }
+    .mod-header { display: flex; align-items: center; gap: 8px; padding: 14px 16px; cursor: pointer; list-style: none; user-select: none; }
+    .mod-header::-webkit-details-marker { display: none; }
+    .mod-title { flex: 1; font-size: .95rem; font-weight: 600; color: #180620; }
+    .mod-count { font-size: .8rem; color: #5F3ABE; }
+    .mod-arrow { font-size: 1.1rem; color: #A38AFF; transition: transform .2s; }
+    details[open] .mod-arrow { transform: rotate(90deg); }
+    .mod-lessons { list-style: none; padding: 0 16px 12px; display: flex; flex-direction: column; gap: 6px; }
+    .mod-lessons li { font-size: .9rem; color: #180620; line-height: 1.4; }
+    .lec-num { color: #A38AFF; font-weight: 600; }
+    .mod-resultado { font-size: .85rem; color: #5c4d80; line-height: 1.5; padding: 10px 16px 14px; border-top: 1px solid #D4C8FF; margin-top: 4px; }
+    .mod-resultado strong { color: #180620; }
+
+    #por-que { background: #EDE8FF; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #por-que h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 14px; }
+    #por-que ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    #por-que li { font-size: .9rem; line-height: 1.5; padding-left: 14px; border-left: 3px solid #A38AFF; border-radius: 0; }
+
+    footer { text-align: center; margin-top: 32px; font-size: .8rem; color: #A38AFF; }
+
+    @media (min-width: 640px) {
+      .page { padding: 24px 16px 48px; }
+      #certificado img { border-radius: 16px; width: 100%; }
+      #certificado { margin-bottom: 24px; padding: 0 16px; }
+      #precio, #que-espera, #plan, #por-que { margin: 0 0 24px; padding: 24px; }
+      #proyectos { margin: 0 0 24px; }
+      #plan { padding: 0; }
+      #precio h2, #que-espera h2 { font-size: 1.25rem; }
+      #por-que h2 { font-size: 1.1rem; }
+      #por-que li { font-size: .95rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <section id="certificado">
+    <img src="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_siddhartha_johanan_tello_espa_a_1784259849667-dblyYKWDNrzhP1RKZrUQVNxfUGhqh7.png" alt="Certificado de Siddhartha Johanan Tello España">
+  </section>
+
+  <section id="precio">
+    <h2>Cuánto cuesta</h2>
+    <p class="duration">1 hora</p>
+    <a class="cta-btn" href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=2596944712-2df7ad51-2fd0-4496-9f5f-3a6bb8f5b4b4" target="_blank">Pagar ahora →</a>
+  </section>
+
+  <section id="que-espera">
+    <h2>Qué le espera a <span>Siddhartha Johanan Tello España</span> en Creación de Juegos en Roblox</h2>
+    <ul>
+      <li>Desarrolla videojuegos reales en Roblox Studio con el lenguaje LUA</li>
+        <li>Crea mundos, misiones, NPCs y mecánicas multijugador</li>
+        <li>Un puente hacia lenguajes más complejos como Python</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Lo que crean los estudiantes</h2>
+    <div class="proj-grid">
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3231-6238-4236-b032-666632383732/roblox-01-min.gif" alt="Mundo en Roblox" loading="lazy">
+        <p>Mundo en Roblox</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3238-3231-4635-a533-393262383261/_GIF-.gif" alt="Juego multijugador" loading="lazy">
+        <p>Juego multijugador</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3438-6538-4666-b039-366330383566/_GIF-min.gif" alt="Construcción 3D" loading="lazy">
+        <p>Construcción 3D</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>Plan temático</h2>
+    
+    <details class="mod" open>
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 1. El mundo de Roblox Studio</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Roblox Studio</li>
+        <li><span class="lec-num">Lección 2:</span> Coordenadas de los objetos</li>
+        <li><span class="lec-num">Lección 3:</span> Creación de un juego para e-atletas profesionales (Parte 1)</li>
+        <li><span class="lec-num">Lección 4:</span> Creación de un juego para e-atletas profesionales (Parte 2)</li>
+        <li><span class="lec-num">Lección 5:</span> Ampliando la funcionalidad del juego con scripts</li>
+        <li><span class="lec-num">Lección 6:</span> Finalización del juego</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes son capaces de utilizar Roblox Studio, comprender cuándo es necesario usar scripts y crear entornos y objetos 3D interactivos.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 2. El mundo en el que vivimos</span>
+        <span class="mod-count">7 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Creando nuestro mundo: paisaje y plantas. Parte 1</li>
+        <li><span class="lec-num">Lección 2:</span> Creando nuestro mundo: paisaje y plantas. Parte 2</li>
+        <li><span class="lec-num">Lección 3:</span> Creando nuestro mundo: edificios</li>
+        <li><span class="lec-num">Lección 4:</span> Creando nuestro mundo: iluminación</li>
+        <li><span class="lec-num">Lección 5:</span> Añadiendo scripts: práctica aplicada</li>
+        <li><span class="lec-num">Lección 6:</span> Creando nuestro propio mundo: sorpresas y obstáculos</li>
+        <li><span class="lec-num">Lección 7:</span> El mundo en el que vivimos: presentación de proyectos</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes pueden diseñar y construir su propio mundo de juego, organizar el entorno (terreno, edificios, iluminación) y añadir elementos interactivos simples para crear una experiencia de juego completa.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 3. Un mundo lleno de misterios</span>
+        <span class="mod-count">7 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Herramientas de planificación</li>
+        <li><span class="lec-num">Lección 2:</span> Añadiendo chatbots al juego</li>
+        <li><span class="lec-num">Lección 3:</span> Transiciones entre niveles</li>
+        <li><span class="lec-num">Lección 4:</span> Añadiendo acertijos y rompecabezas a la Quest (Parte 1)</li>
+        <li><span class="lec-num">Lección 5:</span> Añadiendo acertijos y rompecabezas a la Quest (Parte 2)</li>
+        <li><span class="lec-num">Lección 6:</span> Usando un asistente de IA</li>
+        <li><span class="lec-num">Lección 7:</span> Completando el juego de la Quest</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes pueden diseñar una jugabilidad basada en misiones, gestionar transiciones entre niveles, implementar NPC con comportamientos simples (diálogos, patrullas, interacciones) y finalizar y pulir un juego de aventuras hasta que esté listo para jugarse.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 4. Un mundo lleno de sorpresas</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> ¿Qué es un RPG?</li>
+        <li><span class="lec-num">Lección 2:</span> Creando una mecánica de ataque en el juego</li>
+        <li><span class="lec-num">Lección 3:</span> Creando el jefe principal</li>
+        <li><span class="lec-num">Lección 4:</span> Diseñando logros para el jugador</li>
+        <li><span class="lec-num">Lección 5:</span> Creando mecánicas RPG</li>
+        <li><span class="lec-num">Lección 6:</span> Presentación final</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes comprenden los conceptos básicos de los RPG, diseñan e implementan mecánicas de RPG (ataques, jefes, logros) y completan un juego con un sistema de progresión y una presentación final del proyecto.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 5. Creación de juegos multijugador</span>
+        <span class="mod-count">5 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Creando un sistema de inventario</li>
+        <li><span class="lec-num">Lección 2:</span> Juegos multijugador</li>
+        <li><span class="lec-num">Lección 3:</span> Trabajo de proyecto (Parte 1)</li>
+        <li><span class="lec-num">Lección 4:</span> Trabajo de proyecto (Parte 2)</li>
+        <li><span class="lec-num">Lección 5:</span> Organización de un torneo de e-sports</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes comprenden las diferencias entre las estrategias de juegos para un solo jugador y multijugador, y son capaces de diseñar scripts que funcionen en modo multijugador.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 6. El mundo de las pistas de carreras</span>
+        <span class="mod-count">5 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> ¿Qué son los simuladores?</li>
+        <li><span class="lec-num">Lección 2:</span> Creando un mapa de pista de carreras</li>
+        <li><span class="lec-num">Lección 3:</span> Construyendo tu portafolio de juegos</li>
+        <li><span class="lec-num">Lección 4:</span> Probando tus habilidades</li>
+        <li><span class="lec-num">Lección 5:</span> Graduación: creación del juego &quot;Rey de la colina&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Además de crear un juego de carreras, los estudiantes desarrollan habilidades emprendedoras para promocionar su producto y atraer a una audiencia.</p>
+    </details>
+  </section>
+
+  <section id="por-que">
+    <h2>¿Por qué aprender Creación de Juegos en Roblox en Algonova?</h2>
+    <ul>
+      <li>Un puente hacia lenguajes de programación más complejos, como Python.</li>
+        <li>Aprende a desarrollar videojuegos reales estudiando el lenguaje de programación LUA.</li>
+        <li>Desarrollo de habilidades creativas: crea mundos e historias.</li>
+        <li>Desarrollamos la lógica y las habilidades de programación.</li>
+    </ul>
+  </section>
+
+  <footer>© Algonova · algonova.lat</footer>
+</div>
+</body>
+</html>
