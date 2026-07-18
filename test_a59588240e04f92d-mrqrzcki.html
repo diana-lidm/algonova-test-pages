@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan — Algonova</title>
+  <meta property="og:title" content="Alan — Algonova">
+  <meta property="og:image" content="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_alan_1784403852445-8x5MPQQTd1173ElKIvVTJ688ko7CTf.png">
+  <meta property="og:description" content="Diseño Digital Junior — Algonova">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F7F4FF; color: #180620; min-height: 100vh; }
+    .page { max-width: 720px; margin: 0 auto; padding: 0 0 48px; }
+
+    #certificado { text-align: center; margin-bottom: 20px; }
+    #certificado img { width: 100%; display: block; box-shadow: 0 4px 24px rgba(95,58,190,.15); }
+
+    #precio { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #precio h2 { font-size: 1.1rem; color: #5F3ABE; margin-bottom: 8px; }
+    .duration { font-size: .95rem; color: #6b5f80; margin-bottom: 16px; }
+    .cta-btn { display: block; background: #5F3ABE; color: #fff; text-decoration: none; text-align: center; padding: 14px 24px; border-radius: 10px; font-size: 1rem; font-weight: 600; }
+    .cta-fallback { background: #F7F4FF; border-radius: 10px; padding: 14px 16px; font-size: .95rem; color: #5F3ABE; border: 1px solid #D4C8FF; }
+
+    #que-espera { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #que-espera h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 16px; line-height: 1.4; }
+    #que-espera h2 span { color: #180620; font-weight: 700; }
+    #que-espera ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    #que-espera li { display: flex; align-items: flex-start; gap: 10px; font-size: 1rem; line-height: 1.5; }
+    #que-espera li::before { content: "✓"; flex-shrink: 0; width: 22px; height: 22px; background: #5F3ABE; color: #fff; border-radius: 50%; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+
+    #proyectos { margin: 0 12px 16px; }
+    #proyectos h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .proj-item { background: #fff; border-radius: 12px; overflow: hidden; }
+    .proj-item img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: contain; background: #111; }
+    .proj-item p { font-size: .75rem; color: #5F3ABE; text-align: center; padding: 6px 8px; }
+
+    #plan { margin: 0 12px 16px; }
+    #plan h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .mod { background: #EDE8FF; border-radius: 12px; margin-bottom: 8px; overflow: hidden; }
+    .mod-header { display: flex; align-items: center; gap: 8px; padding: 14px 16px; cursor: pointer; list-style: none; user-select: none; }
+    .mod-header::-webkit-details-marker { display: none; }
+    .mod-title { flex: 1; font-size: .95rem; font-weight: 600; color: #180620; }
+    .mod-count { font-size: .8rem; color: #5F3ABE; }
+    .mod-arrow { font-size: 1.1rem; color: #A38AFF; transition: transform .2s; }
+    details[open] .mod-arrow { transform: rotate(90deg); }
+    .mod-lessons { list-style: none; padding: 0 16px 12px; display: flex; flex-direction: column; gap: 6px; }
+    .mod-lessons li { font-size: .9rem; color: #180620; line-height: 1.4; }
+    .lec-num { color: #A38AFF; font-weight: 600; }
+    .mod-resultado { font-size: .85rem; color: #5c4d80; line-height: 1.5; padding: 10px 16px 14px; border-top: 1px solid #D4C8FF; margin-top: 4px; }
+    .mod-resultado strong { color: #180620; }
+
+    #por-que { background: #EDE8FF; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #por-que h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 14px; }
+    #por-que ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    #por-que li { font-size: .9rem; line-height: 1.5; padding-left: 14px; border-left: 3px solid #A38AFF; border-radius: 0; }
+
+    footer { text-align: center; margin-top: 32px; font-size: .8rem; color: #A38AFF; }
+
+    @media (min-width: 640px) {
+      .page { padding: 24px 16px 48px; }
+      #certificado img { border-radius: 16px; width: 100%; }
+      #certificado { margin-bottom: 24px; padding: 0 16px; }
+      #precio, #que-espera, #plan, #por-que { margin: 0 0 24px; padding: 24px; }
+      #proyectos { margin: 0 0 24px; }
+      #plan { padding: 0; }
+      #precio h2, #que-espera h2 { font-size: 1.25rem; }
+      #por-que h2 { font-size: 1.1rem; }
+      #por-que li { font-size: .95rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <section id="certificado">
+    <img src="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_alan_1784403852445-8x5MPQQTd1173ElKIvVTJ688ko7CTf.png" alt="Certificado de Alan">
+  </section>
+
+  <section id="precio">
+    <h2>Cuánto cuesta</h2>
+    <p class="duration">1 hora</p>
+    <div class="cta-fallback">Para completar el pago, escríbele a tu asesor — él te enviará el enlace de pago.</div>
+  </section>
+
+  <section id="que-espera">
+    <h2>Qué le espera a <span>Alan</span> en Diseño Digital Junior</h2>
+    <ul>
+      <li>Crea ilustraciones digitales, personajes, logos e íconos</li>
+        <li>Modela objetos en 3D y hace sus primeras animaciones</li>
+        <li>Termina con un portafolio de 5 trabajos de diseño</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Lo que crean los estudiantes</h2>
+    <div class="proj-grid">
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3261-3765-4635-b364-656536363363/Aslam.gif" alt="Personaje animado" loading="lazy">
+        <p>Personaje animado</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3230-3738-4362-b766-336163306261/M5L1_-_Royan_-_Samur.gif" alt="Diseño de escena" loading="lazy">
+        <p>Diseño de escena</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild6532-3663-4330-b336-323164633735/M5L6_-_Royan_-_Keret.gif" alt="Animación de personaje" loading="lazy">
+        <p>Animación de personaje</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>Plan temático</h2>
+    
+    <details class="mod" open>
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 1. Gráfica raster (GIMP)</span>
+        <span class="mod-count">5 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Color, textura y sombras</li>
+        <li><span class="lec-num">Lección 2:</span> Trabajo con capas</li>
+        <li><span class="lec-num">Lección 3:</span> Creación de collages</li>
+        <li><span class="lec-num">Lección 4:</span> Siluetas y composición</li>
+        <li><span class="lec-num">Lección 5:</span> Proyecto final: &quot;Mi mapa de sueños digital&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo creará sus primeros dibujos digitales, aprenderá a trabajar con capas y hará un collage personal lleno de color.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 2. Gráfica vectorial (Inkscape)</span>
+        <span class="mod-count">5 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Fundamentos del dibujo vectorial</li>
+        <li><span class="lec-num">Lección 2:</span> Creación de texto y mini-logotipos</li>
+        <li><span class="lec-num">Lección 3:</span> Volumen, gradientes y flat design</li>
+        <li><span class="lec-num">Lección 4:</span> Pixel art en vector</li>
+        <li><span class="lec-num">Lección 5:</span> Proyecto final: &quot;Mi personaje de un videojuego&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) creará un avatar, íconos y logotipos sencillos, y comprenderá los principios de un diseño limpio y definido.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 3. Diseño y composición</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Proximidad y alineación</li>
+        <li><span class="lec-num">Lección 2:</span> Repetición y contraste</li>
+        <li><span class="lec-num">Lección 3:</span> Preparación para impresión</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto final: &quot;Mi póster o infografía&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) diseñará su propio póster o cartel informativo, igual que lo hacen los diseñadores profesionales.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 4. Modelado 3D (Tinkercad)</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Formas básicas en 3D</li>
+        <li><span class="lec-num">Lección 2:</span> Espacio, perspectiva e iluminación</li>
+        <li><span class="lec-num">Lección 3:</span> Formas complejas y composición</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto final: &quot;Mi objeto o habitación en 3D&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) creará un objeto o una habitación completa en 3D utilizando Tinkercad.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 5. Animación / Motion Design (Wick Editor)</span>
+        <span class="mod-count">5 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Principios básicos de la animación</li>
+        <li><span class="lec-num">Lección 2:</span> Creación de elementos en movimiento</li>
+        <li><span class="lec-num">Lección 3:</span> Animación de personajes y objetos</li>
+        <li><span class="lec-num">Lección 4:</span> Mini video publicitario</li>
+        <li><span class="lec-num">Lección 5:</span> Proyecto final: &quot;Mi banner animado&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Tu hijo (a) realizará su primera animación y un pequeño video publicitario.</p>
+    </details>
+  </section>
+
+  <section id="por-que">
+    <h2>¿Por qué aprender Diseño Digital Junior en Algonova?</h2>
+    <ul>
+      <li>Estudiaremos los fundamentos del diseño: comprenderemos cómo funcionan el color, la forma y la composición.</li>
+        <li>Creación de un portafolio: desde gráficos rasterizados hasta animaciones y diseño 3D.</li>
+        <li>Enseñaremos a expresar pensamientos, ideas y emociones mediante la creación de imágenes y animaciones.</li>
+        <li>Estudiaremos las herramientas profesionales que utilizan los diseñadores de todo el mundo.</li>
+    </ul>
+  </section>
+
+  <footer>© Algonova · algonova.lat</footer>
+</div>
+</body>
+</html>
