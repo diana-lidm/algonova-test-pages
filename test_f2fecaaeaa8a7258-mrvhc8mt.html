@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Josué Orellana — Algonova</title>
+  <meta property="og:title" content="Josué Orellana — Algonova">
+  <meta property="og:image" content="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_josu__orellana_1784688308986-AjqOuOoPSkqj7SCzPMbzOTflD1iwwb.png">
+  <meta property="og:description" content="Alfabetización Digital — Algonova">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F7F4FF; color: #180620; min-height: 100vh; }
+    .page { max-width: 720px; margin: 0 auto; padding: 0 0 48px; }
+
+    #certificado { text-align: center; margin-bottom: 20px; }
+    #certificado img { width: 100%; display: block; box-shadow: 0 4px 24px rgba(95,58,190,.15); }
+
+    #precio { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #precio h2 { font-size: 1.1rem; color: #5F3ABE; margin-bottom: 8px; }
+    .duration { font-size: .95rem; color: #6b5f80; margin-bottom: 16px; }
+    .cta-btn { display: block; background: #5F3ABE; color: #fff; text-decoration: none; text-align: center; padding: 14px 24px; border-radius: 10px; font-size: 1rem; font-weight: 600; }
+    .cta-fallback { background: #F7F4FF; border-radius: 10px; padding: 14px 16px; font-size: .95rem; color: #5F3ABE; border: 1px solid #D4C8FF; }
+
+    #que-espera { background: #fff; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #que-espera h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 16px; line-height: 1.4; }
+    #que-espera h2 span { color: #180620; font-weight: 700; }
+    #que-espera ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    #que-espera li { display: flex; align-items: flex-start; gap: 10px; font-size: 1rem; line-height: 1.5; }
+    #que-espera li::before { content: "✓"; flex-shrink: 0; width: 22px; height: 22px; background: #5F3ABE; color: #fff; border-radius: 50%; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+
+    #proyectos { margin: 0 12px 16px; }
+    #proyectos h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .proj-item { background: #fff; border-radius: 12px; overflow: hidden; }
+    .proj-item img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: contain; background: #111; }
+    .proj-item p { font-size: .75rem; color: #5F3ABE; text-align: center; padding: 6px 8px; }
+
+    #plan { margin: 0 12px 16px; }
+    #plan h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 12px; }
+    .mod { background: #EDE8FF; border-radius: 12px; margin-bottom: 8px; overflow: hidden; }
+    .mod-header { display: flex; align-items: center; gap: 8px; padding: 14px 16px; cursor: pointer; list-style: none; user-select: none; }
+    .mod-header::-webkit-details-marker { display: none; }
+    .mod-title { flex: 1; font-size: .95rem; font-weight: 600; color: #180620; }
+    .mod-count { font-size: .8rem; color: #5F3ABE; }
+    .mod-arrow { font-size: 1.1rem; color: #A38AFF; transition: transform .2s; }
+    details[open] .mod-arrow { transform: rotate(90deg); }
+    .mod-lessons { list-style: none; padding: 0 16px 12px; display: flex; flex-direction: column; gap: 6px; }
+    .mod-lessons li { font-size: .9rem; color: #180620; line-height: 1.4; }
+    .lec-num { color: #A38AFF; font-weight: 600; }
+    .mod-resultado { font-size: .85rem; color: #5c4d80; line-height: 1.5; padding: 10px 16px 14px; border-top: 1px solid #D4C8FF; margin-top: 4px; }
+    .mod-resultado strong { color: #180620; }
+
+    #por-que { background: #EDE8FF; border-radius: 16px; padding: 20px 16px; margin: 0 12px 16px; }
+    #por-que h2 { font-size: 1rem; color: #5F3ABE; margin-bottom: 14px; }
+    #por-que ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    #por-que li { font-size: .9rem; line-height: 1.5; padding-left: 14px; border-left: 3px solid #A38AFF; border-radius: 0; }
+
+    footer { text-align: center; margin-top: 32px; font-size: .8rem; color: #A38AFF; }
+
+    @media (min-width: 640px) {
+      .page { padding: 24px 16px 48px; }
+      #certificado img { border-radius: 16px; width: 100%; }
+      #certificado { margin-bottom: 24px; padding: 0 16px; }
+      #precio, #que-espera, #plan, #por-que { margin: 0 0 24px; padding: 24px; }
+      #proyectos { margin: 0 0 24px; }
+      #plan { padding: 0; }
+      #precio h2, #que-espera h2 { font-size: 1.25rem; }
+      #por-que h2 { font-size: 1.1rem; }
+      #por-que li { font-size: .95rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <section id="certificado">
+    <img src="https://kfcxcxvlir3d3d7i.public.blob.vercel-storage.com/certificates/cert_josu__orellana_1784688308986-AjqOuOoPSkqj7SCzPMbzOTflD1iwwb.png" alt="Certificado de Josué Orellana">
+  </section>
+
+  <section id="precio">
+    <h2>Cuánto cuesta</h2>
+    <p class="duration">1 hora</p>
+    <div class="cta-fallback">Para completar el pago, escríbele a tu asesor — él te enviará el enlace de pago.</div>
+  </section>
+
+  <section id="que-espera">
+    <h2>Qué le espera a <span>Josué Orellana</span> en Alfabetización Digital</h2>
+    <ul>
+      <li>Domina la computadora: ratón, teclado y manejo de archivos</li>
+        <li>Crea contenido con editores gráficos, texto y presentaciones</li>
+        <li>Navega seguro en internet y usa IA de forma creativa</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Lo que crean los estudiantes</h2>
+    <div class="proj-grid">
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3431-3962-4135-b064-636330326435/__2026-02-18_123711.png" alt="Proyecto con Sumopaint" loading="lazy">
+        <p>Proyecto con Sumopaint</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild6536-3062-4664-b437-326331356366/__2026-02-20_074929.png" alt="Trabajo con WPS Office" loading="lazy">
+        <p>Trabajo con WPS Office</p>
+      </div>
+      <div class="proj-item">
+        <img src="https://static.tildacdn.net/tild3938-6433-4330-b062-333364663631/__2026-02-18_124110.png" alt="Creación con Craiyon AI" loading="lazy">
+        <p>Creación con Craiyon AI</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>Plan temático</h2>
+    
+    <details class="mod" open>
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 1. Inicio digital: trabajo con el ratón, el teclado y el sistema de archivos</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Primeros pasos: Introducción al ordenador</li>
+        <li><span class="lec-num">Lección 2:</span> Teclear, borrar y copiar</li>
+        <li><span class="lec-num">Lección 3:</span> Observatorio Digital</li>
+        <li><span class="lec-num">Lección 4:</span> Rescate de animales mecánicos</li>
+        <li><span class="lec-num">Lección 5:</span> Ciudad Digital</li>
+        <li><span class="lec-num">Lección 6:</span> Talleres técnicos</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Los estudiantes pueden entrenar habilidades en el uso del ratón, teclado y dominar herramientas para trabajar con archivos y carpetas.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 2. Editores gráficos</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Taller de Pixel Art</li>
+        <li><span class="lec-num">Lección 2:</span> Herramientas mágicas para dibujar</li>
+        <li><span class="lec-num">Lección 3:</span> Dibujar por capas</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto &quot;Mapa secreto de píxeles&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Aprendizaje de herramientas gráficas digitales básicas, creación de imágenes sencillas y complejas.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 3. Trabajo con texto</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Creación de un &quot;pase&quot; del servidor</li>
+        <li><span class="lec-num">Lección 2:</span> Investigación Wordy: ¡salva el servidor de un virus!</li>
+        <li><span class="lec-num">Lección 3:</span> Operación Antivirus: creación de un sistema de seguridad</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto &quot;Pasaporte del robot viajero&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Aprendizaje de formato de texto, alineación, diseño de color y creación de tablas en WPS Writer.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 4. Trabajo con presentaciones</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Gran inauguración del estudio Super Games</li>
+        <li><span class="lec-num">Lección 2:</span> Creación de una presentación para el juego RoboWorld</li>
+        <li><span class="lec-num">Lección 3:</span> Festival del Océano: ¡dando vida al juego!</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto &quot;Ampliando el Festival del Océano&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Introducción al software de presentaciones y desarrollo de habilidades en organización de información y diseño visual.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 5. Internet y habilidades de navegación</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Ventana a Internet</li>
+        <li><span class="lec-num">Lección 2:</span> Operación &quot;¡Detengan el generador!&quot;</li>
+        <li><span class="lec-num">Lección 3:</span> Museo Mavi: búsqueda de exposiciones perdidas</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto &quot;Agencia digital secreta&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Enseñar a usar el navegador de forma segura, buscar y descargar imágenes. Comprender diferencias entre imágenes estáticas, PNG y GIF.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 6. Trabajo con IA</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Visita a la universidad de IA</li>
+        <li><span class="lec-num">Lección 2:</span> Facultad de superpoderes de IA</li>
+        <li><span class="lec-num">Lección 3:</span> Taller de arte con IA</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto &quot;Mascota para la universidad de IA&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Introducción de los conceptos básicos de IA a través de un proyecto creativo. Búsqueda (Perplexity.ai) y creación de imágenes (Craiyon).</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 7. Desarrollo de quests</span>
+        <span class="mod-count">4 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Creación de contenido para el quest</li>
+        <li><span class="lec-num">Lección 2:</span> Ilustraciones del quest</li>
+        <li><span class="lec-num">Lección 3:</span> Ensamblaje del quest</li>
+        <li><span class="lec-num">Lección 4:</span> Proyecto &quot;Festival de historias&quot;</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Enseñar a crear contenido para búsquedas interactivas utilizando IA.</p>
+    </details>
+
+    <details class="mod" >
+      <summary class="mod-header">
+        <span class="mod-title">Módulo 8. Programación y cierre</span>
+        <span class="mod-count">6 lecciones</span>
+        <span class="mod-arrow">›</span>
+      </summary>
+      <ul class="mod-lessons">
+        <li><span class="lec-num">Lección 1:</span> Oficina de diseño de la academia</li>
+        <li><span class="lec-num">Lección 2:</span> Problema de señal</li>
+        <li><span class="lec-num">Lección 3:</span> Lanzamiento del cohete</li>
+        <li><span class="lec-num">Lección 4:</span> Trabajo en Marte</li>
+        <li><span class="lec-num">Lección 5:</span> Preparación del viaje</li>
+        <li><span class="lec-num">Lección 6:</span> Nuevo viaje</li>
+      </ul>
+      <p class="mod-resultado"><strong>Resultado:</strong> Creación de material visual para un robot astronauta: iconos en AutoDraw y personaje animado en Animated Drawings. Resultado: archivo PNG de iconos y GIF del robot.</p>
+    </details>
+  </section>
+
+  <section id="por-que">
+    <h2>¿Por qué aprender Alfabetización Digital en Algonova?</h2>
+    <ul>
+      <li>Seguridad en Internet: enseñamos a buscar información correctamente y a sortear con habilidad cualquier peligro en Internet.</li>
+        <li>Aprender jugando: dominamos la computadora y programas complejos en el formato de una emocionante aventura.</li>
+        <li>Ayuda en los estudios: enseñamos a manejar fácilmente la carga de trabajo y a estar un paso por delante de los compañeros.</li>
+        <li>Un boleto al futuro: una base sólida para aprender programación y diseño digital.</li>
+    </ul>
+  </section>
+
+  <footer>© Algonova · algonova.lat</footer>
+</div>
+</body>
+</html>
